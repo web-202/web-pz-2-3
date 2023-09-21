@@ -90,25 +90,30 @@ function setUpKings(isWhite) {
   createFigure(isWhite, x, 5, "king");
 }
 
-const upLettersDiv = document.createElement("div");
-upLettersDiv.className = "letter_row";
-letters.forEach((letter) => upLettersDiv.appendChild(createLetterDiv(letter)));
+function generateBoard() {
+  const upLettersDiv = document.createElement("div");
+  upLettersDiv.className = "letter_row";
+  letters.forEach((letter) => upLettersDiv.appendChild(createLetterDiv(letter)));
 
-const bottomLettersDiv = upLettersDiv.cloneNode(true);
+  const bottomLettersDiv = upLettersDiv.cloneNode(true);
 
-boardDiv.appendChild(upLettersDiv);
+  boardDiv.appendChild(upLettersDiv);
 
-for (let col = 0; col < cols; col++) {
-  const rowDiv = createRowWithNumbers(cols - col);
+  for (let col = 0; col < cols; col++) {
+    const rowDiv = createRowWithNumbers(cols - col);
 
-  for (let row = 0; row < rows; row++) {
-    rowDiv.appendChild(createCell((col + row) % 2 === 0, col + 1, row + 1));
+    for (let row = 0; row < rows; row++) {
+      rowDiv.appendChild(createCell((col + row) % 2 === 0, col + 1, row + 1));
+    }
+
+    rowDiv.appendChild(createRowWithNumbers(cols - col));
+    boardDiv.appendChild(rowDiv);
   }
 
-  rowDiv.appendChild(createRowWithNumbers(cols - col));
-  boardDiv.appendChild(rowDiv);
+  boardDiv.appendChild(bottomLettersDiv);
+
+  setUpFigures()
+
 }
 
-boardDiv.appendChild(bottomLettersDiv);
-
-setUpFigures()
+generateBoard()
