@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.button-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  padding: 10px;
+}
+
+.button-block button {
+  padding: 10px;
+  background-color: green;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border-style: none;
+}
