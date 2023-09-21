@@ -1,0 +1,42 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.imges {
+  display: flex;
+  justify-content: center;
+}
+
+.text-urls {
+  margin: 100px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.hidden {
+  display: none;
+}
+
+.error {
+  border: 1px solid red;
+}
+
+
+.form-menu {
+  display: flex;
+  justify-content: center;
+  margin: 100px;
+}
+
+.form-menu__items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.error-log {
+  display: flex;
+  justify-content: center;
+}

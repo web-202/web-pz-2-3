@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
+  <title>PZ_2_3</title>
+  <link rel="stylesheet" type="text/css" href="./main.css">
+</head>
+<body>
+  <div class="imges">
+    <img id="image1" src="./img/img1.png" width="200" height="300"
+         onclick="showNotification('image1')" oncontextmenu="rotateImage('image1')">
+    <img id="image2" src="./img/img2.jpg" width="200" height="300"
+         onclick="showNotification('image2')" oncontextmenu="rotateImage('image2')">
+    <img id="image3" src="./img/img3.jpg" width="200" height="300"
+         onclick="showNotification('image3')" oncontextmenu="rotateImage('image3')">
+  </div>
+  <div class="text-urls">
+    <a id="link1" href="посилання_1">Посилання 1
+      (<span class="hidden" id="href1">https://pdr.infotech.gov.ua</span>)</a><br>
+    <a id="link2" href="посилання_2">Посилання 2 (<span class="hidden" id="href2">https://www.youtube
+      .com/watch?v=K-aD8ClG1FQ</span>)</a><br>
+    <a id="link3" href="posilannya_3">Посилання 3 (<span class="hidden" id="href3">https://icons8
+      .com/icons/set/console</span>)</a>
+  </div>
+
+  <div class="form-menu">
+    <form id="userForm" class="form-menu__items">
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName"><br>
+
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName"><br>
+
+      <label for="age">Age:</label>
+      <input type="text" id="age" name="age"><br>
+
+      <button type="button" onclick="validateForm()">Submit</button>
+    </form>
+  </div>
+  <div id="demo" class="error-log"></div>
+
+<script src="./index.js"></script>
+</body>
+</html>
