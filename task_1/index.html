@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="./main.css">
+
+  <title>Document</title>
+</head>
+<body>
+<div class="container">
+  <div class="block">
+    <img onclick="showAlert('https://github.com/Brazilianian')"
+         oncontextmenu="rotateElement(this, 90)"
+         src="./img/image-1.jpg" alt="image 1">
+    <a onmouseenter="addHrefToTextContent(this)"
+       onmouseleave="removeHrefFromTextContent(this)"
+       href="https://github.com/Brazilianian">GitHub</a>
+  </div>
+  <div class="block">
+    <img onclick="showAlert('https://nbvinchik.com/')"
+         oncontextmenu="rotateElement(this, 90)"
+         src="./img/nbivnchik-logo.png" alt="image 2">
+    <a onmouseenter="addHrefToTextContent(this)"
+       onmouseleave="removeHrefFromTextContent(this)"
+       href="https://nbvinchik.com/">NBVinchik</a>
+  </div>
+  <div class="block">
+    <img onclick="showAlert('https://www.instagram.com/dolgushin_49/')"
+         oncontextmenu="rotateElement(this, 90)"
+         src="./img/image-2.jpg" alt="image 3">
+    <a onmouseenter="addHrefToTextContent(this)"
+       onmouseleave="removeHrefFromTextContent(this)"
+       href="https://www.instagram.com/dolgushin_49/">Instagram</a>
+  </div>
+</div>
+
+<div class="form">
+  <div id="demo">
+
+  </div>
+  <form action="#">
+    first name: <br>
+    <input id="firstName" name="firstName" type="text"> <br>
+
+    last name: <br>
+    <input id="lastName" name="lastName" type="text"> <br>
+
+    age: <br>
+    <input min="0" step="1" id="age" name="age" type="number"> <br>
+    <button onclick="showDataInBlock()" type="button">Submit</button>
+  </form>
+</div>
+
+<script src="./index.js"></script>
+</body>
+</html>

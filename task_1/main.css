@@ -1,0 +1,30 @@
+body {
+  background-color: #1c1c3a;
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container > img {
+  width: 20vw;
+  border: 3px white dashed;
+  border-radius: 20px;
+}
+
+.container > img:hover {
+  cursor: pointer;
+  filter: brightness(0.7);
+}
+
+.block {
+  text-align: center;
+  font-size: 24px;
+}
+
+a {
+  color: gray;
+}
