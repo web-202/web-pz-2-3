@@ -1,0 +1,29 @@
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.board {
+  border: 2px black solid;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  height: 10vh;
+  width: 10vh;
+  border: 1px gray solid;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 64px;
+}
+
+.black {
+  background-color: black;
+}
