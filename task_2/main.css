@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  color: white;
+  font-size: 25px;
+  height: 10vh;
+  width: 10vw;
+  border-radius: 20px;
+}
+
+.update {
+  background-color: green;
+}
+
+.delete {
+  background-color: red;
+}
+
+.pending {
+  background-color: yellow;
+}
