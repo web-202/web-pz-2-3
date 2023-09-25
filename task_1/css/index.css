@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_mt-5 {
+  margin-top: 5vh;
+}
+
+.container_mt-10 {
+  margin-top: 10vh;
+}
+
+.container__img {
+  height: 200px;
+  width: 300px;
+}
+
+.container__link {
+  border: 1px solid black;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+.container__result {
+  text-align: center;
+  font-size: 40px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+
+.form__input{
+  border-radius: 5px;
+}
