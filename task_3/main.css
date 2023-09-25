@@ -1,0 +1,46 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.table {
+
+}
+
+.cell {
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+}
+
+.black {
+  background: #b58862;
+}
+
+.figure {
+  height: 40px;
+  width: 40px;
+}
+
+.white {
+  background: #ababab;
+}
+
+.table__borders {
+  font-size: 24px;
+  background: #1b1b1b;
+  color: #fefefe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+}
+
