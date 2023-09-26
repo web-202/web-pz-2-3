@@ -3,6 +3,12 @@ function showNotification(href) {
   alert(href);
 }
 
+const img = document.getElementsByTagName("img");
+for (let i =0; i< img.length; i++){
+  img.item(i).addEventListener('contextmenu', function(event) {
+    event.preventDefault();
+  });
+}
 
 let rotationAngles = {};
 function rotateImage(imageId) {
