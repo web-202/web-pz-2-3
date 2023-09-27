@@ -24,7 +24,8 @@ images2.forEach(img => {
     img.style.transform = "rotate(" + rotationDegree + "deg)"
   })
 
-  img.addEventListener("contextmenu", () => {
+  img.addEventListener("contextmenu", (e) => {
+    e.preventDefault()
     rotationDegree -= 90
     img.style.transform = "rotate(" + rotationDegree + "deg)"
   })
