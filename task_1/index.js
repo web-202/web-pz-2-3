@@ -5,7 +5,7 @@ function showAlert(message) {
 function rotateElement(element, angle) {
   const oldTransform = element.style.transform || 'rotate(0deg)';
   const regex = new RegExp('\\d+')
-  let oldAngle= parseFloat(oldTransform.match(regex)[0]);
+  let oldAngle = parseFloat(oldTransform.match(regex)[0]);
   element.style.transform = `rotate(${oldAngle + angle}deg)`;
 }
 
@@ -38,7 +38,7 @@ function showDataInBlock() {
     age.style.backgroundColor = 'red'
     return
   }
-  age .style.backgroundColor = 'white'
+  age.style.backgroundColor = 'white'
 
   const demoDiv = document.getElementById('demo')
   demoDiv.innerHTML = `First name - ${firstName.value} <br> Last name - ${lastName.value} <br> Age - ${age.value}`
@@ -51,3 +51,14 @@ function validateName(name) {
 function validateAge(age) {
   return age > 0
 }
+
+function preventDefaultForImages() {
+  const imgList = document.getElementsByTagName('img')
+  for (const imgListElement of imgList) {
+    imgListElement.addEventListener('contextmenu', (event) => {
+      event.preventDefault()
+    })
+  }
+}
+
+preventDefaultForImages();
