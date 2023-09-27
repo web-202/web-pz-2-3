@@ -10,10 +10,37 @@
 
 <body>
     <div class="blocks">
-        <img id="1" src="./img/1.jpeg" alt="photo1">
-        <img id="2" src="./img/2.jpg" alt="photo2">
-        <img id="3" src="./img/3.jpeg" alt="photo3">
+        <img id="1" src="./img/1.jpeg" alt="photo1" href="./img/1.jpeg">
+        <img id="2" src="./img/2.jpg" alt="photo2" href="./img/2.jpg">
+        <img id="3" src="./img/3.jpeg" alt="photo3" href="./img/3.jpeg">
     </div>
+
+    <div class="links">
+        <a id="link1" href="http://google.com">Google</a>
+        <a id="link2" href="https://github.com/web-202/web-pz-2-3/pull/4">GitHub</a>
+        <a id="link3" href="http://127.0.0.1:5500/task_1/">This PZ</a>
+    </div>
+
+
+
+<form id="myForm">
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName" required maxlength="50">
+    <br>
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName" required maxlength="50">
+    <br>
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" required min="0">
+    <br>
+    <button type="submit">Submit</button>
+</form>
+
+<div id="demo"></div>
+
+    
+    
+
 
     <script src="index.js"></script>
 </body>

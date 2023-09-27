@@ -2,14 +2,92 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgb(126, 126, 126);
+}
+
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
 }
 
 .blocks {
-    margin: 100px 200px;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px auto;
+    max-width: 800px;
 }
 
 .blocks img {
     width: 300px;
     height: 200px;
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 30px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.links a {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #dc6060;
+    transition: color 0.3s ease-in-out;
+    margin-bottom: 20px;
+}
+
+.links a:hover {
+    color: #007BFF;
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+form input[type="text"],
+form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+form button[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 100px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+#demo{
+    max-width: 190px;
+    margin: 0 auto;
+    border: 2px dotted red;
+    font-size: 30px;
+    background: rgb(0, 60, 0);
+    color: lime;
 }
