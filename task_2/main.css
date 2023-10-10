@@ -1,0 +1,21 @@
+.status-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: grey;
+    border: none;
+    cursor: pointer;
+}
+
+.status-button.active {
+    background-color: #2ecc71;
+    color: #fff;
+}
+
+.status-button.inactive {
+    background-color: #e74c3c;
+    color: #fff;
+}
+.status-button.reset {
+    background-color: yellow;
+    color: #fff;
+}
