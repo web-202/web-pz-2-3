@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.page-app {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 10px;
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+    transition: all .6s ease;
+}
+
+.button_update {
+    background-color: green;
+}
+
+.button_update:hover {
+    border: 1px solid green;
+    background-color: white;
+    color: green;
+}
+
+.button_delete {
+    background-color: red;
+}
+
+.button_delete:hover {
+    border: 1px solid red;
+    background-color: white;
+    color: red;
+}
+
+.button_pendding {
+    background-color: rgb(169, 169, 12);
+}
+
+.button_pendding:hover {
+    border: 1px solid rgb(169, 169, 12);
+    background-color: white;
+    color: rgb(169, 169, 12);
+}
