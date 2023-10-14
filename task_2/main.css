@@ -1,22 +1,26 @@
-#status-button {
-    width: 150px;
-    height: 50px;
-    font-size: 18px;
-    cursor: pointer;
-    text-align: center;
-    border: 2px solid #000;
-    transition: background-color 0.3s;
-  }
+.button {
+  color: #000;
+  border-radius: 20px;
+  padding: 5px;
+}
 
-  /* Стилі для різних станів кнопки */
-  .default {
-    background-color: #ccc;
-  }
+.button-update {
+  background: green;
+  color: #000;
+  border-radius: 20px;
+  padding: 5px;
+}
 
-  .pending {
-    background-color: #ffcc00;
-  }
+.button-delete {
+  background: red;
+  color: #000;
+  border-radius: 20px;
+  padding: 5px;
+}
 
-  .success {
-    background-color: #00cc00;
-  }
+.button-pendding {
+  background: orange;
+  color: #000;
+  border-radius: 20px;
+  padding: 5px;
+}
