@@ -8,8 +8,7 @@
 
 * As user I want to see three image (200 x 300)px and when I click right mouse button on img, I want to rotate image on 90 degree
   
-* As user I want to see three link and when cursor over on the link, I want to add href to the end of text in the parentheses, and remove href from the end of the link when cursor leave link
-
+* 
 * As user I want to see form with three input (first name, last name, and age) and button submit. When form is valid show message in block with id="demo"
 ```
 first name: <first name>

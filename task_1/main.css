@@ -1,0 +1,47 @@
+*body{
+    margin: 0;
+}
+
+img{
+    width:200px;
+    height: 300px;
+    margin: 20px;
+}
+
+.images{
+    margin-top: 10%;
+    display: flex;
+    width: max-content;
+    margin: auto;
+}
+
+.form-class{
+    display: block;
+    margin: auto;
+    width: max-content;
+}
+
+.form-class > div{
+    margin: 10px;
+}
+
+#demo{
+    width: max-content;
+    margin: auto;
+    font-size: 30px;
+    color: red;
+}
+
+#btn-state{
+    border: 0;
+    border-radius: 5px;
+    background-color: rgb(173, 255, 51);
+    color: white;
+    width: 100px;
+    height: 30px;
+}
+
+.block_btn{
+    width: max-content;
+    margin: auto;
+}
