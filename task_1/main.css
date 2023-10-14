@@ -31,17 +31,3 @@ img{
     font-size: 30px;
     color: red;
 }
-
-#btn-state{
-    border: 0;
-    border-radius: 5px;
-    background-color: rgb(173, 255, 51);
-    color: white;
-    width: 100px;
-    height: 30px;
-}
-
-.block_btn{
-    width: max-content;
-    margin: auto;
-}

@@ -1,0 +1,13 @@
+.btn-create-dashboard{
+    padding: 10px;
+    color: white;
+    background-color: rgb(173, 255, 51);
+    border: 0;
+    border-radius: 5px;
+}
+
+.btn-block{
+    margin: auto;
+    width: max-content;
+    margin-bottom: 10px;
+}
