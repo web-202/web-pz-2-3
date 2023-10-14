@@ -1,0 +1,14 @@
+td {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.black {
+    background-color: #d18b47;
+}
+
+.white {
+    background-color: #ffce9e;
+}
