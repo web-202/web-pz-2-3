@@ -7,3 +7,13 @@
     margin: 10px;
     cursor: pointer;
 }
+.link {
+    text-decoration: none;
+}
+
+.link:hover::after {
+    content: " (href)";
+}
+.invalid {
+    border: 2px solid red;
+}
