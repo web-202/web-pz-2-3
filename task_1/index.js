@@ -30,3 +30,10 @@ function submitForm() {
         demo.style.display = 'none';
     }
 }
+function disablecontext(e) {
+	var clickedEl = (e==null) ? event.srcElement.tagName : e.target.tagName;
+	if (clickedEl == "IMG") {
+		return false;
+	}
+}
+document.oncontextmenu = disablecontext;
