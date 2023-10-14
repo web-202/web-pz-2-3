@@ -1,0 +1,22 @@
+.button{
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.grean{
+    background-color: green;
+    color: white;
+  }
+  
+.yelow{
+    background-color: yellow;
+    color: black;
+  }
+  
+.red {
+    background-color: red;
+    color: white;
+  }

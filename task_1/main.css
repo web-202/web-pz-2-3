@@ -1,0 +1,36 @@
+
+
+.imges{
+    display: flex;
+}
+.imges_1{
+    width: 400px;
+    height: 600px;
+    margin: 20px 20px 20px 20px;
+}
+.img-container {
+  display: inline-block;
+}
+
+.img-title {
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 5px;
+  display: none;
+}
+
+.img-container:hover .img-title {
+  display: block;
+}
+
+  /*Form*/
+  .forms{
+    margin-top: 100px;
+  }
+  input.invalid {
+    border: 1px solid red;
+}
+
+  
