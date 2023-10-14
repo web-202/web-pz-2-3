@@ -1,0 +1,9 @@
+.first_group_images{
+    display: flex;
+    justify-content: center;
+}
+
+.first_group_images img{
+    margin-right: 15px;
+    border: 2px solid #000;
+}
