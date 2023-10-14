@@ -23,9 +23,14 @@ function submitForm() {
         const firstName = document.getElementById('firstName').value;
         const lastName = document.getElementById('lastName').value;
         const age = document.getElementById('age').value;
+        if(age >= 150 ){
+            alert("age must be < 150")
+            form.reset();
+        }else{
         demo.innerHTML = `Дані надіслані: Ім'я: ${firstName}, Прізвище: ${lastName}, Вік: ${age}`;
         demo.style.display = 'block';
         form.reset();
+        }
     } else {
         demo.style.display = 'none';
     }
