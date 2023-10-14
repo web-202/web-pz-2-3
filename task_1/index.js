@@ -31,9 +31,10 @@ function submitForm() {
     }
 }
 function disablecontext(e) {
-	var clickedEl = (e==null) ? event.srcElement.tagName : e.target.tagName;
-	if (clickedEl == "IMG") {
-		return false;
-	}
+    var clickedEl = (e == null) ? event.srcElement.tagName : e.target.tagName;
+    if (clickedEl == "IMG") {
+        e.preventDefault();
+    }
 }
+
 document.oncontextmenu = disablecontext;
