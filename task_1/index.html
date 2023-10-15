@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>TASK_1</title>
+</head>
+<body>
+    <!-- Task 1:  -->
+    <div class="image-container">
+        <img src="img/Залуужний.jpg" alt="Image 1" onclick="showAlert('Link 1 Href')">
+        <img src="img/Шухевич.jpg" alt="Image 2" onclick="showAlert('Link 2 Href')">
+        <img src="img//Богун.jpg" alt="Image 3" onclick="showAlert('Link 3 Href')">
+    </div>
+
+    <!-- Task 2: -->
+    <div class="image-container">
+        <img src="img/UK.jpg" alt="Image 1" oncontextmenu="rotateImage(event)">
+        <img src="img/прапорУПА.jpg" alt="Image 2" oncontextmenu="rotateImage(event)">
+        <img src="img/Козацький_прапор.jpg" alt="Image 3" oncontextmenu="rotateImage(event)">
+    </div>
+
+    <!-- Task 3:  -->
+    <div class="link-container">
+        <a href="#" onmouseover="addHref(this, 'Link 1 Href')" onmouseout="removeHref(this)">Link 1</a>
+        <a href="#" onmouseover="addHref(this, 'Link 2 Href')" onmouseout="removeHref(this)">Link 2</a>
+        <a href="#" onmouseover="addHref(this, 'Link 3 Href')" onmouseout="removeHref(this)">Link 3</a>
+    </div>
+
+    <!-- Task 4:  -->
+    <form id="myForm" onsubmit="validateForm(); return false;">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" oninput="validateInput(this)">
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" oninput="validateInput(this)">
+
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age" oninput="validateInput(this)">
+
+        <button type="submit">Надіслати</button>
+    </form>
+
+
+    <div id="demo"></div>
+
+    <script src="index.js"></script>
+</body>
+</html>
