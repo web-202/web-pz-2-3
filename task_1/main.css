@@ -1,0 +1,33 @@
+/* Додайте свої стилі тут */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.status-button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.status-button.status-1 {
+  background: linear-gradient(to right, #ff6161, #ff8e61);
+  color: white;
+}
+
+.status-button.status-2 {
+  background: linear-gradient(to right, #45b3e0, #89bdde);
+  color: white;
+}
+
+.status-button.status-3 {
+  background: linear-gradient(to right, #aadd52, #a0e57c);
+  color: white;
+}

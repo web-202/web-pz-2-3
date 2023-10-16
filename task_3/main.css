@@ -1,0 +1,52 @@
+/* main.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .board-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .row {
+    display: flex;
+    
+  }
+ 
+  .square {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    box-sizing: border-box;
+  }
+  
+  .black {
+    background-color: #999;
+  }
+  
+  .label {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .column-label {
+    height: 50px;
+    width: 80px;
+  }
+  
+  .row-label {
+    width: 50px;
+  }
+  .labels-row {
+    padding: 0;
+    margin: 0px 0px 0px 48px;  
+}
+  

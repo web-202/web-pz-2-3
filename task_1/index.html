@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <script src="index.js" defer></script>
+  <title>Завдання 1</title>
+</head>
+<body>
+  <div id="images-container">
+    <img class="clickable" src="C:\Users\LEGION\Desktop\WEB_22\web-pz-2-3\web-pz-2-3\task_1\img\661623649_661623649.webp" alt="Зображення 1">
+    <img class="clickable" src="C:\Users\LEGION\Desktop\WEB_22\web-pz-2-3\web-pz-2-3\task_1\img\3339298-600x600.jpg" alt="Зображення 2">
+    <img class="clickable" src="C:\Users\LEGION\Desktop\WEB_22\web-pz-2-3\web-pz-2-3\task_1\img\images (3).jpg" alt="Зображення 3">
+  </div>
+
+  <div id="links-container">
+    <a class="link" href="https://uk.wikipedia.org/wiki/Дисципліна">Посилання 1 </a>
+    <a class="link" href="https://uk.wikipedia.org/wiki/Спорт">Посилання 2 </a>
+    <a class="link" href="https://uk.wikipedia.org/wiki/Навчання">Посилання 3</a>
+  </div>
+
+  <form id="form">
+    <label for="first-name">Ім'я:</label>
+    <input type="text" id="first-name" name="first-name" required>
+    <label for="last-name">Прізвище:</label>
+    <input type="text" id="last-name" name="last-name" required>
+    <label for="age">Вік:</label>
+    <input type="number" id="age" name="age" required>
+    <button type="submit">Відправити</button>
+  </form>
+  <script>
+    const links = document.querySelectorAll('.link');
+
+    links.forEach(link => {
+      link.addEventListener('mouseover', function() {
+        const originalText = link.innerText;
+        const hrefText = link.getAttribute('href');
+        link.innerText = `${originalText} (${hrefText})`;
+      });
+
+      link.addEventListener('mouseout', function() {
+        const originalText = link.innerText.split(' (')[0];
+        link.innerText = originalText;
+      });
+    });
+  </script>
+  <div id="demo"></div>
+</body>
+</html>
