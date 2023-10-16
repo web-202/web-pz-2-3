@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+	<div class="page">
+    <div class="main" onclick="ActionLeft(this)" oncontextmenu="ActionRight(event,this)">
+        <img src="FELV-cat.jpg" alt="image_1">
+		</div>
+		<div class="main" onclick="ActionLeft(this)" oncontextmenu="ActionRight(event,this)">
+			<img src="FELV-cat.jpg" alt="image_1">
+		</div>
+		<div class="main" onclick="ActionLeft(this)" oncontextmenu="ActionRight(event,this)">
+				<img src="FELV-cat.jpg" alt="image_1">
+		</div>
+  </div>
+	<div></div>
+    <a href="https://github.com/settings/organizations" onmouseover="addHref(this)" onmouseout="removeHref(this)">Link 1</a>
+    <a href="https://github.com/settings/organizations" onmouseover="addHref(this)" onmouseout="removeHref(this)">Link 2</a>
+    <a href="https://github.com/settings/organizations" onmouseover="addHref(this)" onmouseout="removeHref(this)">Link 3</a>
+
+    <form id="userForm">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+
+        <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+
+    <div id="demo" class="message"></div>
+    <script src="index.js">
+    </script>
+</body>
+</html>
