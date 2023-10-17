@@ -29,14 +29,21 @@ a:hover::after {
 }
 
 .form{
-    justify-content: center;
-    height: auto;
-    width: 292px;
+    display: block;
+    width: 500px;
+}
+
+.input-field{
+    display: block;
+    width: 90%;
     padding: 5px;
-    margin-left: 25px;
     border: 2px solid #000;
 }
 
-input[type="text"], input[type="number"] {
-    text-align: right;
+.send-btn{
+    color: white;
+    background-color: rgb(107, 151, 151);
+    cursor: pointer;
+    padding: 5px;
+    border: none;
 }
