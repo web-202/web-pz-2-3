@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>TASK_1</title>
+</head>
+<body>
+   
+    <form id="myForm" onsubmit="validateForm(); return false;">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" oninput="validateInput(this)">
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" oninput="validateInput(this)">
+
+        <label for = "age">Age:</label>
+        <input type="text" id="age" name="age" oninput="validateInput(this)">
+
+        <button type="submit">Надіслати</button>
+    </form>
+
+    <div id="demo"></div>
+
+    
+<div class="image-container">
+    <img src="img/Ярослав М 2 .jpg" alt="Image 2" onclick="showAlert('img/Ярослав М 2 .jpg')">
+    <img src="img/Ярослав М.jpg" alt="Image 6" onclick="showAlert('Ярослав М.jpg')">
+    <div class="image-group">
+        <img src="img/Зе.jpg" alt="Image 5" onclick="showAlert('Зе.jpg')">
+        <img src="img/Зе2.jpg" alt="Image 1" onclick="showAlert('Зе2.jpg')">
+    </div>
+    <img src="img/bohun.jpg" alt="Image 3" onclick="showAlert('bohun.jpg')">
+    <img src="img/02b31c5-0027.jpg" alt="Image 4" onclick="showAlert('02b31c5-0027.jpg')">
+</div>
+<script src="index.js"></script>
+</body>
+</html>
