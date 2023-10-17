@@ -1,0 +1,17 @@
+img{
+    width: 200px;
+    height: 300px;
+    margin: 20px;
+}
+
+.block{
+    width: max-content;
+    margin: auto;
+    display: flex;
+}
+
+.person{
+    display: block;
+    width: max-content;
+    margin: auto;
+}
