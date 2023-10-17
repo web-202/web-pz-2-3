@@ -1,0 +1,51 @@
+  body {
+    background-color: aquamarine;
+  }
+  
+  .page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .chess_board {
+    height: auto;
+    width: 450px;
+    display: grid;
+    grid-template-columns: repeat(9, 50px);
+    grid-template-rows: repeat(9, 50px);
+    border: 1px solid black;
+  }
+  
+  .cell {
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    position: relative;
+  }
+
+  .white {
+    background-color: wheat;
+    color: #333;
+  }
+
+  .black {
+    background-color: gray;
+    color: #fff;
+  }
+  
+  .col-label, .row-label {
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  .chess_piece {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    max-height: 100%;
+  }

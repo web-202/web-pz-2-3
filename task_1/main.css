@@ -1,0 +1,26 @@
+img {
+    width: 200px;
+    height: 300px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.div_1{
+    display: flex;
+}
+
+.div_2 {
+    margin: 20px;
+}
+
+.link {
+    display: block;
+    margin-bottom: 10px;
+}
+
