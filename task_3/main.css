@@ -1,4 +1,4 @@
-/* Стилізація клітинок */
+
 .chessboard {
     display: grid;
     grid-template-columns: repeat(9, 50px);
@@ -6,41 +6,41 @@
     gap: 1px;
 }
 
-/* Стилізація чорних клітинок */
+
 .black {
     background-color: #000;
     position: relative;
-    z-index: 2; /* Додаємо position: relative; для контролю за допомогою z-index */
+    z-index: 2; 
 }
 
-/* Стилізація білих клітинок */
+
 .white {
     background-color: #fff;
-    position: relative; /* Додаємо position: relative; для контролю за допомогою z-index */
+    position: relative; 
 }
 
-/* Стилізація фігур (додайте класи для кожного типу фігур) */
+
 .piece {
     width: 50px;
     height: 50px;
     background-size: contain;
-    background-color: transparent; /* Встановіть фон фігур як прозорий */
-    position: relative; /* Додаємо position: relative; для контролю за допомогою z-index */
+    background-color: transparent;
+    position: relative; 
 }
 
-/* Стилізація фону для чорних клітинок */
+
 .black .piece {
     background-color: black;
-    z-index: 1; /* Встановлюємо більший z-index, щоб картинка з прозорим фоном лягала на чорний квадрат */
+    z-index: 1; 
 }
 
-/* Приклад стилізації пешки */
+
 .pawn {
     background-image: url('img/pawn.png');
-    z-index: 2; /* Встановлюємо менший z-index, щоб пішка лягала поверх картинки */
+    z-index: 2; 
 }
 
-/* Додайте стилі для інших фігур */
+
 
 
 

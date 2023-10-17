@@ -1,39 +1,37 @@
-// Отримайте посилання на шахову дошку
+
 const chessboard = document.getElementById('chessboard');
 
-// Додайте клітинки на дошку
+
 for (let row = 0; row < 8; row++) {
     for (let col = 0; col < 8; col++) {
         const cell = document.createElement('div');
         cell.classList.add((row + col) % 2 === 0 ? 'white' : 'black');
-        cell.classList.add('square'); // Додайте клас "square" для кожної клітинки
+        cell.classList.add('square'); 
         cell.id = String.fromCharCode(65 + col) + (8 - row);
         chessboard.appendChild(cell);
     }
 }
 const pieces = [];
 
-// Додайте функцію для додавання фігур на дошку
+
 function addPiece(cellId, imageUrl, alt) {
     const cell = document.getElementById(cellId);
-    if (cell) { // Перевірте, чи існує клітинка перед додаванням фігури
+    if (cell) { 
         const piece = document.createElement('img');
         piece.src = imageUrl;
         piece.alt = alt;
-        piece.classList.add('piece'); // Додайте клас "piece" для кожної фігури
+        piece.classList.add('piece'); 
         
         const cell = document.getElementById(cellId);
-        cell.classList.remove('white', 'black'); // Видаліть класи 'white' та 'black' з клітинки
+        cell.classList.remove('white', 'black'); 
         cell.appendChild(piece);
         
-        pieces.push(piece); // Додайте фігуру до відповідної клітинки
+        pieces.push(piece); 
         
     }
 }
- // Додайте фігуру до відповідної клітинки
 
 
-// Білі фігури
 addPiece('A1', 'img/white_rook.png', 'white_rook');
 addPiece('B1', 'img/black_officer.png', 'White Knight');
 addPiece('C1', 'img/white_horse.png', 'White Bishop');
@@ -47,7 +45,6 @@ for (let col = 'A'; col <= 'H'; col = String.fromCharCode(col.charCodeAt(0) + 1)
     addPiece(`white-pawn-${col}2`, 'img/white-pawn.png', 'White Pawn');
 }
 
-// Чорні фігури
 addPiece('A8', 'img/black_rook.png', 'white_rook');
 addPiece('B8', 'img/wnite_officer.png', 'White Knight');
 addPiece('C8', 'img/black_horse.png', 'White Bishop');

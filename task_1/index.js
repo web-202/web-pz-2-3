@@ -4,9 +4,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("myForm");
     const demo = document.getElementById("demo");
 
-    const rotationDegrees = {}; // Об'єкт для відстеження кількості поворотів для кожного зображення
+    const rotationDegrees = {}; 
 
-    // Додамо всім зображенням початковий ступінь повороту (0 градусів)
+
     images.forEach(img => {
         rotationDegrees[img.src] = 0;
         img.addEventListener("click", function () {
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         img.addEventListener("contextmenu", function (event) {
             event.preventDefault();
-            // Збільшуємо ступінь повороту на 90 градусів кожен раз при правому кліку
+           
             rotationDegrees[img.src] += 90;
             img.style.transform = `rotate(${rotationDegrees[img.src]}deg)`;
         });
