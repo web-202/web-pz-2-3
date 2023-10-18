@@ -1,0 +1,57 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+}
+
+.task1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.img {
+    width: 150px;
+    height: 200px;
+}
+
+
+.task2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.close {
+    display: none;
+}
+
+#exeption {
+    color: red;
+    font-size: 20px;
+}
+
+.red {
+    border: 2px solid red;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 251px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+label {
+    font-size: 20px;
+}
