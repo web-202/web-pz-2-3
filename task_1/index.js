@@ -5,8 +5,12 @@
     const img = document.getElementById('yourImageId'); 
   
     function rotateImage(img) {
+        img.addEventListener('context_menu', function(e){
+            e.preventDefault();
+        })
         const currentRotation = img.getAttribute('data-rotation') || 0;
         const newRotation = (parseInt(currentRotation) + 90) % 360;
+        
 
         img.style.transform = `rotate(${newRotation}deg)`;
         img.setAttribute('data-rotation', newRotation);
@@ -18,9 +22,9 @@
     userForm.addEventListener('submit', function (e) {
     e.preventDefault();
 
-    const firstNameInput = document.getElementById('input_name');
-    const lastNameInput = document.getElementById('input_last_name');
-    const ageInput = document.getElementById('input_age');
+    const firstNameInput = document.getElementById('first_name');
+    const lastNameInput = document.getElementById('last_name');
+    const ageInput = document.getElementById('age');
     const demoBlock = document.getElementById('demo');
 
     const firstName = firstNameInput.value.trim();
@@ -40,7 +44,7 @@
     ageInput.classList.remove("invalid");
 
     if (firstNameValid && lastNameValid && ageValid) {
-        demoBlock.innerHTML = `Форма валідна. ${firstName}  ${lastName}, ${age}y.o`;
+        demoBlock.innerHTML = `${firstName}  ${lastName}, ${age}y.o`;
     } else {
         demoBlock.innerHTML = "Не вірно введені дані";
         

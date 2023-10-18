@@ -25,11 +25,17 @@
         </div>
     </div>   
 
-    <h2>Форма</h2>
-    <form action="" class="form" id="add-form">
-        <input type="text" class="input-field" id="input_name" required placeholder="Ім'я"><br>
-        <input type="text" class="input-field" id="input_last_name" required placeholder="Прізвище"><br>
-        <input type="number" class="input-field" id="input_age" required placeholder="Вік"><br>
+    
+    <form class="form" id="add-form">
+        <h2>Форма</h2>
+        <label for="first_name">Name:</label>
+        <input type="text" class="input-field" id="first_name" required><br>
+
+        <label for="last_name">Last Name:</label>
+        <input type="text" class="input-field" id="last_name" required><br>
+
+        <label for="age">Age:</label>
+        <input type="number" class="input-field" id="age" required><br>
           
         <button type="submit" class="send-btn" id="sub_btn">Надіслати</button>
     </form>
