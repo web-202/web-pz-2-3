@@ -1,0 +1,19 @@
+#status-button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  
+  .status-pending {
+    background: #eee;
+    color: #666;
+  }
+  
+  .status-complete {
+    background: #6bb96e;
+    color: #fff;
+  }
+  
+  .status-cancelled {
+    background: #eb6b56;
+    color: #fff;  
+  }
