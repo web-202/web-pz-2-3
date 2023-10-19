@@ -38,9 +38,10 @@ const demo = document.getElementById('demo')
         }
 
         if(check){
-            demo.innerText = 'Valid'
+            demo.style.color = "black"
+            demo.innerText = `first name: ${name.value}\nlast name: ${last.value}\n age: ${age.value}`
         }else{
-            demo.innerText = 'Not valid'
+            demo.innerText = ""
         }
     })
 
