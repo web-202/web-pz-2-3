@@ -39,7 +39,7 @@ form_submit.addEventListener('submit', (e) => {
     }
 
     if(check){
-        demo.innerHTML = "Vallid"
+        demo.innerHTML = `Ім'я:${name}, Прізвище:${last}, Вік:${age}`
     }else{
         demo.innerHTML = "Not vallid"
     }
