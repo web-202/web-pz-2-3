@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
         { text: "update", color: "green" },
         { text: "delete", color: "red" },
         { text: "pending", color: "yellow" },
+        {text: "ibdex", color: "blue"}
     ];
     let currentStatusIndex = 0;
 
