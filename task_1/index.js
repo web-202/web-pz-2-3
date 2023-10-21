@@ -38,29 +38,37 @@ links.forEach(link => {
 const validationName = (name) => {
     const regex = /^[a-zA-Z0-9\s]*$/;
     if (name.length > 50 || name.length < 2) return false;
-    if (regex.test(name)) return true;
-    else return false;
+    return regex.test(name);
 };
 
 const validationAge = (age) => {
     if (age <= 0) return false;
-    else if (age > 120) return false;
-    else return true;
+    else return age <= 120;
 };
 
 personalDataForm.addEventListener("submit", (event) => {
     event.preventDefault();
 
-    let isValid = false;
     const personalData = {
         firstName: personalDataForm["first-name"].value,
         lastName: personalDataForm["last-name"].value,
         age: personalDataForm["age"].value,
     };
 
-    isValid = validationName(personalData.firstName + personalData.lastName)
-        && validationAge(personalData.age);
+    let isValid = true, message = "";
+
+    if (!validationName(personalData.firstName + " " + personalData.lastName)) {
+        isValid = false;
+        message += "First and last name must be letters without special characters and max length should be 50 characters.<br>";
+        personalDataForm["first-name"].style.borderColor = "red";
+        personalDataForm["last-name"].style.borderColor = "red";
+    }
+
+    if (!validationAge(personalData.age)) {
+        isValid = false;
+        message += "Age must be only number without negative number.<br>";
+    }
 
     if (isValid) textBlock.textContent = "This is form valid!!!";
-    else textBlock.textContent = "This is form not valid!!!";
+    else textBlock.innerHTML = "This is form not valid!!! <br>" + message;
 });
