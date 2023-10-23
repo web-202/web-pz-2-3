@@ -1,0 +1,9 @@
+.img-rotate {
+  transform: rotate(90deg);
+}
+.img-wheel{
+  transform: rotate(0deg);
+}
+.error {
+  border: 2px solid red;
+}

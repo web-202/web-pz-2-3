@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
 <body>
@@ -10,10 +11,31 @@
 
 <h1>Task #1</h1>
 
-<img src="img/img1.jfif" href="img/img1.jfif" id="img1" onclick="alertHref('img1')" width="200" height="300">
-<img src="img/img2.jfif" href="img/img2.jfif" id="img2" onclick="alertHref('img2')" width="200" height="300">
-<img src="img/img3.jpg" href="img/img3.jpg" id="img3" onclick="alertHref('img3')"  width="200" height="300">
+<div class="images">
+  <img src="img/img1.jfif" href="img/img1.jfif" id="img1" class="img-wheel" onclick="alertHref('img1')" width="200" height="300">
+  <img src="img/img2.jfif" href="img/img2.jfif" id="img2" class="img-wheel" onclick="alertHref('img2')" width="200" height="300">
+  <img src="img/img3.jpg" href="img/img3.jpg" id="img3" class="img-wheel" onclick="alertHref('img3')" oncontextmenu="wheelImg('img3')" width="200" height="300">
+</div>
+<div>
+  <p id="p1" href="https://learn.javascript.ru/">javascript.ru</p>
+  <p id="p2" href="https://www.youtube.com/">youtube</p>
+  <p id="p3" href="https://github.com/">github</p>
+</div>
+<div>
+  <form id="myForm">
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName"><br>
 
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName"><br>
+
+    <label for="age">Age:</label>
+    <input type="text" id="age" name="age"><br>
+
+    <button type="button" id="submitButton">Submit</button>
+  </form>
+  <div id="demo"></div>
+</div>
 
 <script src="main.js"></script>
 
