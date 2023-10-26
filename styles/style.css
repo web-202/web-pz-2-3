@@ -1,0 +1,83 @@
+.task__block{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+.task__content{
+    justify-content: space-between;
+    display: flex;
+}
+.title__block{
+    font-size: 30px;
+    border-bottom: 1px solid rgba(32, 16, 102, 0.596);
+}
+/* .task__content > img{
+    width: 100%;
+    height: 100%;
+} */
+.item__rectangle{
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    box-shadow: 3px 3px blue, -1em 0 .4em yellow;
+}
+.chess-board {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    grid-template-columns: repeat(8, 50px);
+  }
+
+  .cell {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+  }
+
+  .even-row .cell:nth-child(even),
+  .odd-row .cell:nth-child(odd) {
+    background-color: #000000;
+  }
+
+  .even-row .cell:nth-child(odd),
+  .odd-row .cell:nth-child(even) {
+    background-color: #fff;
+  }
+
+  .chess-board {
+    display: grid;
+    grid-template-columns: repeat(8, 50px);
+  }
+
+  .cell {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+  }
+
+  .even-row .cell:nth-child(even),
+  .odd-row .cell:nth-child(odd) {
+    background-color: #5d5d5d;
+  }
+
+  .even-row .cell:nth-child(odd),
+  .odd-row .cell:nth-child(even) {
+    background-color: #d4d4d4;
+  }
+
+  .chess-figures {
+    display: grid;
+    grid-template-columns: repeat(8, 50px);
+    margin-top: 20px;
+  }
