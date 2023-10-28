@@ -1,4 +1,3 @@
-// index.js
 document.addEventListener("DOMContentLoaded", function() {
   const buttons = document.querySelectorAll(".status-button");
 
@@ -12,8 +11,12 @@ document.addEventListener("DOMContentLoaded", function() {
         button.classList.remove("failure");
         button.classList.add("neutral");
         button.textContent = "Neutral";
-      } else {
+      } else if (button.classList.contains("neutral")) {
         button.classList.remove("neutral");
+        button.classList.add("index");
+        button.textContent = "Index";
+      } else {
+        button.classList.remove("index");
         button.classList.add("success");
         button.textContent = "Success";
       }

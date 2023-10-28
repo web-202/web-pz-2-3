@@ -16,17 +16,17 @@ body {
   transition: background-color 0.3s ease;
 }
 
-.status-button.status-1 {
+.status-button.success {
   background: linear-gradient(to right, #ff6161, #ff8e61);
   color: white;
 }
 
-.status-button.status-2 {
+.status-button.failure {
   background: linear-gradient(to right, #45b3e0, #89bdde);
   color: white;
 }
 
-.status-button.status-3 {
+.status-button.neutral {
   background: linear-gradient(to right, #aadd52, #a0e57c);
   color: white;
 }
