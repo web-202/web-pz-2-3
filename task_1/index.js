@@ -1,68 +1,47 @@
 document.addEventListener("DOMContentLoaded", function() {
-  const images = document.querySelectorAll(".clickable");
-  const links = document.querySelectorAll(".link");
-  const form = document.getElementById("form");
-  const firstNameInput = document.getElementById("first-name");
-  const lastNameInput = document.getElementById("last-name");
+  const images = document.querySelectorAll(".image-container img");
+  const links = document.querySelectorAll(".link-container a");
+  const form = document.getElementById("userForm");
+  const firstNameInput = document.getElementById("firstName");
+  const lastNameInput = document.getElementById("lastName");
   const ageInput = document.getElementById("age");
   const demoBlock = document.getElementById("demo");
 
-  // Показати сповіщення із посиланням при кліку на зображення
-  images.forEach(image => {
-    image.addEventListener("click", function() {
-      alert(image.getAttribute("src"));
-    });
+  images.forEach(img => {
+      img.addEventListener("click", function() {
+          alert(img.getAttribute("src"));
+      });
 
-    // Повернути зображення на 90 градусів за правим кліком миші
-    image.addEventListener("contextmenu", function(event) {
-      event.preventDefault();
-      image.style.transform = `rotate(${(parseInt(image.style.transform.replace("rotate(", "").replace("deg)", "")) || 0) + 90}deg)`;
-    });
+      img.addEventListener("contextmenu", function(event) {
+          event.preventDefault();
+          img.style.transform = "rotate(90deg)";
+      });
   });
 
-  // Додати та видалити посилання при наведенні курсора миші
   links.forEach(link => {
-    link.addEventListener("mouseover", function() {
-      link.href = `https://example.com/${link.innerText.replace(" (за замовчуванням)", "")}`;
-    });
+      link.addEventListener("mouseover", function() {
+          link.innerText += ` (${link.getAttribute("href")})`;
+      });
 
-    link.addEventListener("mouseout", function() {
-      link.href = "А все)";
-    });
+      link.addEventListener("mouseout", function() {
+          const text = link.innerText.split(" ")[0];
+          link.innerText = text;
+      });
   });
 
-  // Перевірка форми та відображення повідомлення в блоку demo
   form.addEventListener("submit", function(event) {
-    event.preventDefault();
+      event.preventDefault();
 
-    // Скинути рамки
-    firstNameInput.classList.remove("red-border");
-    lastNameInput.classList.remove("red-border");
-    ageInput.classList.remove("red-border");
+      const firstNameValue = firstNameInput.value.trim();
+      const lastNameValue = lastNameInput.value.trim();
+      const ageValue = ageInput.value.trim();
 
-    // Валідація
-    const firstName = firstNameInput.value.trim();
-    const lastName = lastNameInput.value.trim();
-    const age = ageInput.value.trim();
-
-    const nameRegex = /^[А-Яа-яЁё ]{1,50}$/u;
-    const ageRegex = /^[0-9]+$/;
-
-    if (!firstName || !nameRegex.test(firstName)) {
-      firstNameInput.classList.add("red-border");
-      return;
-    }
-
-    if (!lastName || !nameRegex.test(lastName)) {
-      lastNameInput.classList.add("red-border");
-      return;
-    }
-
-    if (!age || !ageRegex.test(age) || parseInt(age) < 0) {
-      ageInput.classList.add("red-border");
-      return;
-    }
-
-    demoBlock.textContent = `Форма успішно відправлена! Ім'я: ${firstName}, Прізвище: ${lastName}, Вік: ${age}`;
+      if (/^[A-Za-z]{1,50}$/.test(firstNameValue) && /^[A-Za-z]{1,50}$/.test(lastNameValue) && /^[0-9]+$/.test(ageValue)) {
+          demoBlock.innerText = `Form is valid. First Name: ${firstNameValue}, Last Name: ${lastNameValue}, Age: ${ageValue}`;
+          demoBlock.classList.remove("red-border");
+      } else {
+          demoBlock.innerText = "Invalid form data. Please check your inputs.";
+          demoBlock.classList.add("red-border");
+      }
   });
 });
