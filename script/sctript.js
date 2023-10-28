@@ -139,11 +139,11 @@ const generateChessBoardPhoto = () => {
 
             if (row === 1 || row === 8) {
                 const img = document.createElement('img');
-                img.src = row === 1  ? `../img/${piecesOrder[col - 1]}_black.png` : `../img/${piecesOrder[col - 1]}_white.png`;
+                img.src = row === 1  ? `./img/${piecesOrder[col - 1]}_black.png` : `./img/${piecesOrder[col - 1]}_white.png`;
                 piece.appendChild(img);
             } else if (row === 2 || row === 7) {
                 const img = document.createElement('img');
-                img.src = row === 2 ? `img/pawn_black.png` :`img/chess-piece.png`;
+                img.src = row === 2 ? `./img/pawn_black.png` :`./img/chess-piece.png`;
                 piece.appendChild(img);
             }
 
