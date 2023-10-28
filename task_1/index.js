@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const namePattern = /^[A-Za-z ]{1,50}$/;
         const agePattern = /^\d+$/;
 
-        if (!namePattern.test(firstName.value) || !namePattern.test(lastName.value) || !agePattern.test(age.value)) {
+        if (!namePattern.test(firstName.value) || !namePattern.test(lastName.value) || !agePattern.test(age.value) || parseInt(age.value) > 200) {
             firstName.classList.add("invalid");
             lastName.classList.add("invalid");
             age.classList.add("invalid");
