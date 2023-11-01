@@ -1,0 +1,43 @@
+body {
+    background: linear-gradient(to bottom, rgb(215, 68, 68) 50%, rgb(15, 14, 14) 60%);
+    margin: 0;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    margin-right: 50px;
+}
+.invalid-input {
+    border: 2px solid red;
+}
+
+.invalid-message {
+    color: rgb(114, 6, 6);
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+}
+
+.image {
+    margin: 10px;
+}
+
+.image-group {
+    display: flex;
+    flex-direction: column;
+}
