@@ -1,0 +1,30 @@
+.btn{
+    border-radius: 3px;
+    color:white;
+    border:none;
+    padding: 5px 10px;
+  }
+  .btn:hover{
+    scale: 1.1;
+    transition-duration: 200ms;
+    cursor:pointer;
+  }
+  
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .btn_update{
+    background: #2DBB4F;
+  }
+  
+  .btn_delete{
+    background: #EB4648;
+  }
+  
+  .btn_pending{
+    background: #FDBE77;
+  }
