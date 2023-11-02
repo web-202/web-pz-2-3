@@ -1,11 +1,25 @@
 img {
-  cursor: pointer;
+  width: 200px;
+  height: 300px;
 }
 
-a {
-  cursor: pointer;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
 }
 
-.invalid {
-  border: 1px solid red;
+.div_1{
+  display: flex;
+}
+
+.div_2 {
+  margin: 20px;
+}
+
+.link {
+  display: block;
+  margin-bottom: 10px;
 }

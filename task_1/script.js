@@ -1,58 +1,83 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const images = document.querySelectorAll("img");
-  const links = document.querySelectorAll("a");
-  const form = document.getElementById("myForm");
-  const demo = document.getElementById("demo");
+const img_1 = document.getElementById('1');
+const img_2 = document.getElementById('2');
+const img_3 = document.getElementById('3');
+const images = document.querySelectorAll('.rotate');
+const links = document.querySelectorAll('.link');
+const form = document.getElementById('div_3');
+const demo = document.getElementById('demo');
 
-  const rotationDegrees = {}; 
 
-  images.forEach(img => {
-      rotationDegrees[img.src] = 0;
-      img.addEventListener("click", function () {
-          alert("Image clicked: " + img.src);
-      });
+img_1.onclick = function() {
+    alert('Image 1 was clicked!');
+};
 
-      img.addEventListener("contextmenu", function (event) {
-          event.preventDefault();
+img_2.onclick = function() {
+    alert('Image 2 was clicked!');
+};
 
-          rotationDegrees[img.src] += 90;
-          img.style.transform = `rotate(${rotationDegrees[img.src]}deg)`;
-      });
-  });
+img_3.onclick = function() {
+    alert('Image 3 was clicked!');
+};
 
-  const link = document.querySelectorAll('.links a');
-  const siteLink = document.getElementById('site-link');
+function rotateImage(image) {
+    const currentRotation = image.getAttribute('data-rotation') || 0;
+    const newRotation = (parseInt(currentRotation) + 90) % 360;
 
-  links.forEach(link => {
-      link.addEventListener('mouseover', () => {
-          const site = link.getAttribute('data-site');
-          siteLink.innerHTML = `<a href="${site}" target="_blank">${site}</a>`;
-      });
+    image.style.transform = `rotate(${newRotation}deg)`;
+    image.setAttribute('data-rotation', newRotation);
+}
 
-      link.addEventListener('mouseout', () => {
-          siteLink.innerHTML = '';
-      });
-  });
+images.forEach((image) => {
+    image.addEventListener('contextmenu', (e) => {
+        e.preventDefault();
+        rotateImage(image);
+    });
+});
 
-  form.addEventListener("submit", function (event) {
-      event.preventDefault();
-      const firstName = document.getElementById("firstName");
-      const lastName = document.getElementById("lastName");
-      const age = document.getElementById("age");
+links.forEach((link) => {
+    const originalText = link.textContent;
+    const newText = link.getAttribute('data-text');
 
-      const namePattern = /^[A-Za-z ]{1,50}$/;
-      const agePattern = /^\d+$/;
+    link.addEventListener('mouseover', () => {
+        link.textContent = newText;
+    });
 
-      if (!namePattern.test(firstName.value) || !namePattern.test(lastName.value) || !agePattern.test(age.value)) {
-          firstName.classList.add("invalid");
-          lastName.classList.add("invalid");
-          age.classList.add("invalid");
-          demo.innerText = "Form is invalid. Please correct the input fields.";
-      } else {
-          firstName.classList.remove("invalid");
-          lastName.classList.remove("invalid");
-          age.classList.remove("invalid");
-          demo.innerText = "Form is valid. First Name: " + firstName.value + ", Last Name: " + lastName.value + ", Age: " + age.value;
-      }
-  });
+    link.addEventListener('mouseout', () => {
+        link.textContent = originalText;
+    });
+});
+
+form.addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    const firstName = document.getElementById('firstName').value;
+    const lastName = document.getElementById('lastName').value;
+    const age = document.getElementById('age').value;
+
+    document.getElementById('firstName').style.border = '';
+    document.getElementById('lastName').style.border = '';
+    document.getElementById('age').style.border = '';
+
+    let isValid = true;
+
+    if (!/^[A-Za-z ]{1,50}$/.test(firstName)) {
+        document.getElementById('firstName').style.border = '2px solid red';
+        isValid = false;
+    }
+
+    if (!/^[A-Za-z ]{1,50}$/.test(lastName)) {
+        document.getElementById('lastName').style.border = '2px solid red';
+        isValid = false;
+    }
+
+    if (!/^\d+$/.test(age) || age < 0) {
+        document.getElementById('age').style.border = '2px solid red';
+        isValid = false;
+    }
+
+    if (isValid) {
+        demo.innerHTML = `Form is valid. First Name: ${firstName}, Last Name: ${lastName}, Age: ${age}`;
+    } else {
+        demo.innerHTML = 'Please correct the input errors.';
+    }
 });
