@@ -70,7 +70,7 @@ form.addEventListener('submit', function (event) {
         isValid = false;
     }
 
-    if (!/^\d+$/.test(age) || age < 0) {
+    if (!/^\d+$/.test(age) || 150 > age < 0) {
         document.getElementById('age').style.border = '2px solid red';
         isValid = false;
     }
