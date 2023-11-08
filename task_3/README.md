@@ -15,7 +15,7 @@
 ├── task_2
 ├── task_3
 │   ├── main.css
-│   ├── index.js
+│   ├── main.js
 │   ├── img
 │   │──README.md
 │   └──  index.html  

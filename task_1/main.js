@@ -5,7 +5,6 @@ function alertHref(id){
 }
 
 const imgWheel = document.querySelectorAll('.img-wheel')
-
 imgWheel.forEach(item => {
   item.addEventListener('contextmenu', () => {
     item.style.transform = 'rotate(90deg)'

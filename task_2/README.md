@@ -12,7 +12,7 @@
 ├── task_1
 ├── task_2
 │   ├── main.css
-│   ├── index.js
+│   ├── main.js
 │   │──README.md
 │   └──  index.html 
 ├── task_3

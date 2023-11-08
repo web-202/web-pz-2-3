@@ -1,0 +1,52 @@
+.chessBoardElement {
+  display: grid;
+  grid-template-columns: repeat(8, 50px);
+  grid-template-rows: repeat(8, 50px);
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.chessBoardElement div {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+
+.white {
+  background-color: #ffffff;
+  border: 2px solid black;
+}
+
+.black {
+  background-color: #000000;
+  border: 2px solid black;
+}
+
+img {
+  height: 50px;
+  width: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+.letter {
+  margin-top: -430px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.numbers {
+  display: flex;
+  flex-direction: column;
+  margin-left: -50px;
+  margin-top: -210px;
+  height: 400px;
+}
+
+.number {
+  margin-top: 6px;
+  margin-bottom: 25px;
+}

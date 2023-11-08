@@ -1,0 +1,22 @@
+#btn{
+  padding: 15px 25px;
+  font-size: 16px;
+}
+.update{
+  background-color: limegreen;
+  color: white;
+  padding: 15px 25px;
+  font-size: 16px;
+}
+.delete{
+  background-color: darkred;
+  color: white;
+  padding: 15px 25px;
+  font-size: 16px;
+}
+.pending{
+  background-color: darkorange;
+  color: white;
+  padding: 15px 25px;
+  font-size: 16px;
+}

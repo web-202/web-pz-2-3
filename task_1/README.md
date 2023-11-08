@@ -26,7 +26,7 @@ age: <age name>
 ```
 ├── task_1
 │   ├── main.css
-│   ├── index.js
+│   ├── main.js
 │   ├── img
 │   │──README.md
 │   └──  index.html
