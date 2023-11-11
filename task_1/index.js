@@ -6,6 +6,7 @@ const age = document.getElementById('age');
 const exeption = document.getElementById('exeption');
 const firstPatern = /^[A-Za-z]{1,50}$/;
 const secondPatern = /^\d+$/;
+let exeptions = ["Данні введені не правильно!"];
 
 
 
@@ -41,27 +42,53 @@ for (let i = 0; i< tegA.length; i++){
 
 const button = document.getElementById('ok');
 button.addEventListener("click", () => {
+    exeptions = ["Данні введені не правильно!"];
     surname.classList.remove('red');
     name.classList.remove('red');
     age.classList.remove('red');
+    surname.classList.remove('green');
+    name.classList.remove('green');
+    age.classList.remove('rgreened');
 
     let valid = true;
 
     if (!firstPatern.test(name.value)) {
         name.classList.add('red');
+        exeptions.push(`firstname : ${name.value}`)
         valid = false;
+    }else {
+        name.classList.add('green');
     }
 
     if (!firstPatern.test(surname.value)) {
         surname.classList.add('red');
+        exeptions.push(`lastname : ${surname.value}`)
         valid = false;
+    }else {
+        surname.classList.add('green');
     }
 
     if (!secondPatern.test(age.value) || parseInt(age.value) < 0) {
         age.classList.add('red');
+        exeptions.push(`age : ${age.value}`)
         valid = false;
+    }else {
+        age.classList.add('green');
+        
     }
 
-    if (valid) exeption.innerHTML = 'Молодець!';
-    else exeption.innerHTML = 'Щось пішло не так((';
+    if (valid) {
+        exeptions = ["Данні введені правильно!"];
+        exeptions.push(`firstname : ${name.value}`)
+        exeptions.push(`lastname : ${surname.value}`)
+        exeptions.push(`age : ${age.value}`)
+        
+        exeption.innerHTML = exeptions.join('<br>');
+        exeption.style.color = "green"
+    } 
+    else
+    {
+        exeption.style.color = "red";
+        exeption.innerHTML = exeptions.join('<br>');
+    } 
 })
