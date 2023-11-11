@@ -3,6 +3,11 @@ document.querySelectorAll('#task1').forEach(item => {
     item.onclick = (event) => {
         alert(event.currentTarget.src);
     };
+    item.addEventListener('contextmenu', ()=>{
+        event.preventDefault();
+        item.style.transform = `rotate(${deg}deg)`
+        deg += 90
+    })
 });
 // /Task 1
 
