@@ -24,17 +24,18 @@
 <div>
   <form id="myForm">
     <label for="firstName">First Name:</label>
-    <input type="text" id="firstName" name="firstName"><br>
+    <input type="text" id="firstName" name="firstName" oninput="this.value = this.value.replace(/[^A-Za-z]/g, '')"><br>
 
     <label for="lastName">Last Name:</label>
-    <input type="text" id="lastName" name="lastName"><br>
+    <input type="text" id="lastName" name="lastName" oninput="this.value = this.value.replace(/[^A-Za-z]/g, '')"><br>
 
     <label for="age">Age:</label>
-    <input type="text" id="age" name="age"><br>
+    <input type="number" id="age" name="age" oninput="validateInput(this)"><br>
 
     <button type="button" id="submitButton">Submit</button>
   </form>
   <div id="demo"></div>
+  <div class="result"></div>
 </div>
 
 <script src="main.js"></script>
