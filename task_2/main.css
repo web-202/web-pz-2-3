@@ -1,0 +1,14 @@
+button {
+    margin: 100px 700px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    height: 45px;
+    width: 65px;
+}
+
+.success {
+    background-color: #008CBA;
+}

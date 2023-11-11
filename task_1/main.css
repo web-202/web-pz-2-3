@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(110, 139, 180);
+}
+.header{
+    height: 58px;
+    width: auto;
+    background-color: rgb(135, 189, 236);
+    font-size: 50px;
+    text-align: center;
+}
+.photo{
+    margin: 15px;
+    display: flex;
+    height: 260px;
+    width: auto;
+   
+}
+img{
+    width: 300px;
+    height: 250px;
+    margin: 25px 55px;
+    margin-right: 130px;
+}
+
+.form{
+    margin: 15px 75px;
+    padding-top: 50px;
+}
+
+.label{
+  font-size: 25px;
+}
+.input{
+    border-radius: 5px;
+    height: 25px;
+    width: 250px;
+    border-color: azure;
+    background-color: aliceblue;
+    font-size: 20px;
+    
+}
+button{
+    width: 150px;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: rgb(135, 189, 236);
+    border-color:  rgb(135, 189, 236);
+}
+a{
+    margin: 20px 70px;
+    margin-right: -25px;
+}
+

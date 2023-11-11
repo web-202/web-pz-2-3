@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task_1</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+
+    <div class="header">Images</div> 
+    <div class="photo">
+        <img src="https://th.bing.com/th/id/R.fc2294bf864ee6a0c1bc53a4edae9d63?rik=3mQBW8Vbbw62aQ&riu=http%3a%2f%2fstorge.pic2.me%2fc%2f1360x800%2f919%2f54a415c93e1ad.jpg&ehk=c9YVFyi%2bDGL5zKjKMyTeixawQL8w1X6kCn%2bTarmAxWc%3d&risl=&pid=ImgRaw&r=0"  onclick="showAlert(this)" oncontextmenu="rotateImage(this); return false;">
+        <img src="https://th.bing.com/th/id/OIP.zpYepuFDw3dIk96-hTLzagHaEK?pid=ImgDet&rs=1"  onclick="showAlert(this)" oncontextmenu="rotateImage(this); return false;">
+        <img src="https://th.bing.com/th/id/R.909696cc22413d409c66eb33048729d2?rik=2V4YKYJ80%2fiJpQ&riu=http%3a%2f%2fvmonitor.ru%2fpic%2fspace%2f17657%2fKosmos-1920x1200.jpg&ehk=4T97GwEA1kgPlD2s17jY%2f0rgbVf8fTWApdddD%2fPFsKI%3d&risl=&pid=ImgRaw&r=0"  onclick="showAlert(this)" oncontextmenu="rotateImage(this); return false;">
+    </div>
+    <a class="link" href="https://www.youtube.com/">youtube</a>
+    <a class="link" href="https://www.instagram.com/">instagram</a>
+    <a class="link" href="https://www.facebook.com/">facebook</a>
+    
+
+    <form id="form" class="form">
+        <label for="name" class="label">Name: </label>
+        <input type="text" id="first_name" name="first-name" maxlength="50" class="input">
+        <br><br>
+        <label for="last-name" class="label">Last name: </label>
+        <input type="text" id="last_name" name="last-name" maxlength="50" class="input">
+        <br><br>
+        <label for="age" class="label">Age: </label>
+        <input type="number" id="age" name="age" min="0" class="input">
+        <br><br>
+        <button type="submit"  >OK</button>
+    </form>
+    <div id="demo"></div>
+   <script src="./script.js"></script>
+    
+</body>
+</html>
