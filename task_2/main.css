@@ -1,0 +1,31 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#statusButton {
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.status-1 {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+.status-2 {
+    background-color: #28A745;
+    color: #fff;
+}
+
+.status-3 {
+    background-color: #DC3545 ;
+    color: #000;
+}
+
+.status-4 {
+    background-color: #FFC107 ;
+    color: #fff;
+}

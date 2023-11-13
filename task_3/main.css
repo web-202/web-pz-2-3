@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.prs-button{
+    height: 700px;
+    width: 100%;
+    background-color: rgb(17, 255, 0);
+    border-radius: 15px;
+    font-size: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.chess-board_table {
+    border: 3px solid;
+    border-collapse: collapse;
+}
+
+.chess-board_row_border-bottom .chess-board_letter-cell {
+    border-bottom: 5px solid;
+}
+
+.chess-board_row_border-top .chess-board_letter-cell {
+    border-top: 5px solid;
+}
+
+.chess-board_number-cell_left {
+    border-right: 5px solid;
+}
+
+.chess-board_number-cell_right {
+    border-left: 5px solid;
+}
+
+.chess-board_table-head {
+    background-color: #97965f;
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+}
+
+.chess-board_cell {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+.chess-board_cell_white {
+    background-color: #fff;
+}
+
+.chess-board_cell_black {
+    background-color: #505050;
+}
+
+.chess-pieces {
+    height: 90px;
+    width: 90px;
+}
