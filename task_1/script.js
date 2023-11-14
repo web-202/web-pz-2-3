@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
       img.addEventListener("contextmenu", function (event) {
           event.preventDefault();
-         
           rotationDegrees[img.src] += 90;
           img.style.transform = `rotate(${rotationDegrees[img.src]}deg)`;
       });
@@ -31,16 +30,22 @@ document.addEventListener("DOMContentLoaded", function () {
       const agePattern = /^\d+$/;
 
       if (!namePattern.test(firstName.value) || !namePattern.test(lastName.value) || !agePattern.test(age.value)) {
-          firstName.classList.add("invalid");
-          lastName.classList.add("invalid");
-          age.classList.add("invalid");
+          firstName.classList.add("invalid-border");
+          lastName.classList.add("invalid-border");
+          age.classList.add("invalid-border");
           demo.innerText = "Form is invalid. Please correct the input fields.";
       } 
       else {
-          firstName.classList.remove("invalid");
-          lastName.classList.remove("invalid");
-          age.classList.remove("invalid");
+          firstName.classList.remove("invalid_border");
+          lastName.classList.remove("invalid_border");
+          age.classList.remove("invalid_border");
           demo.innerText = "Form is valid. First Name: " + firstName.value + ", Last Name: " + lastName.value + ", Age: " + age.value;
       }
+
+      
+
+
+
+
   });
 });

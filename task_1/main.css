@@ -54,3 +54,14 @@ a{
     margin-right: -25px;
 }
 
+
+
+
+.invalid-border {
+    border: 2px solid red;
+  }
+
+  .invalid_border{
+    border: 2px solid rgb(0, 255, 8);
+  }
+

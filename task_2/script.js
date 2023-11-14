@@ -1,19 +1,18 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const statusButton = document.getElementById("statusButton");
+    const Button = document.getElementById("Button");
     const statuses = [
         { text: "update", color: "green" },
         { text: "delete", color: "red" },
-        { text: "pending", color: "yellow" },
+        { text: "pending", color: "orange" },
         
     ];
     let currentStatusIndex = 0;
+    Button.textContent = statuses[0].text;
+    Button.style.backgroundColor = statuses[0].color;
 
-    statusButton.textContent = statuses[0].text;
-    statusButton.style.backgroundColor = statuses[0].color;
-
-    statusButton.addEventListener("click", function () {
+    Button.addEventListener("click", function () {
         currentStatusIndex = (currentStatusIndex + 1) % statuses.length;
-        statusButton.textContent = statuses[currentStatusIndex].text;
-        statusButton.style.backgroundColor = statuses[currentStatusIndex].color;
+        Button.textContent = statuses[currentStatusIndex].text;
+        Button.style.backgroundColor = statuses[currentStatusIndex].color;
     });
 });
