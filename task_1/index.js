@@ -55,26 +55,56 @@ personalDataForm.addEventListener("submit", (event) => {
         age: document.getElementById('age').value,
     };
 
-    let isValid = true, message = "";
-
-    if (!validationName(personalData.firstName + " " + personalData.lastName)) {
-        isValid = false;
-        message += "First and last name must be letters without special characters and max length should be 50 characters.\n";
-        document.getElementById('first-name').style.borderColor = "red";
-        document.getElementById('last-name').style.borderColor = "red";
-    }
-
-    if (!validationAge(personalData.age)) {
-        isValid = false;
-        message += "Age must be only a number without a negative number.\n";
-    }
-
-    if (isValid) {
-        personalDataForm.reset();
-        alert("This form is valid!!!");
-
-    } else {
-        alert("This form is not valid!!!" + "\n" + message);
-    }
+    const createDataWindow = (data) => {
+        const dataWindow = document.createElement("div");
+        dataWindow.classList.add("data-window");
+        
+        const content = `
+            <p>First Name: ${data.firstName}</p>
+            <p>Last Name: ${data.lastName}</p>
+            <p>Age: ${data.age}</p>
+        `;
+    
+        dataWindow.innerHTML = content;
+    
+        document.body.appendChild(dataWindow);
+    };
+    
+    personalDataForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+    
+        const personalData = {
+            firstName: document.getElementById('first-name').value,
+            lastName: document.getElementById('last-name').value,
+            age: document.getElementById('age').value,
+        };
+    
+        let isValid = true, message = "";
+    
+        if (!validationName(personalData.firstName + " " + personalData.lastName)) {
+            isValid = false;
+            message += "First and last name must be letters without special characters and max length should be 50 characters.\n";
+            document.getElementById('first-name').style.borderColor = "red";
+            document.getElementById('last-name').style.borderColor = "red";
+        }
+    
+        if (!validationAge(personalData.age)) {
+            isValid = false;
+            message += "Age must be only a number without a negative number.\n";
+            document.getElementById('age').style.borderColor = "red";
+        }
+    
+        if (isValid) {
+            personalDataForm.reset();
+            alert("This form is valid!!!");
+            document.getElementById('first-name').style.borderColor = "green";
+            document.getElementById('last-name').style.borderColor = "green";
+            document.getElementById('age').style.borderColor = "green";
+            createDataWindow(personalData);
+        } else {
+            alert("This form is not valid!!!" + "\n" + message);
+        }
+    });
+    
 });
 
