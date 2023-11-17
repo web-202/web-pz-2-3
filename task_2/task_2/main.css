@@ -1,0 +1,11 @@
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.state1 { background-color: green; color: white; }
+.state2 { background-color: yellow; color: black; }
+.state3 { background-color: red; color: white; }
