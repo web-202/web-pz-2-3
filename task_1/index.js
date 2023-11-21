@@ -68,7 +68,7 @@ button.addEventListener("click", () => {
         surname.classList.add('green');
     }
 
-    if (!secondPatern.test(age.value) || parseInt(age.value) < 0) {
+    if (!secondPatern.test(age.value) || parseInt(age.value) < 0 || parseInt(age.value) > 150) {
         age.classList.add('red');
         exeptions.push(`age : ${age.value}`)
         valid = false;
