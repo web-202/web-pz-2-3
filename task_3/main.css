@@ -1,0 +1,24 @@
+.chessboard {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    width: 400px;
+    height: 400px;
+}
+
+.cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    border: 1px solid #ccc;
+}
+
+.cell:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+.piece {
+    max-width: 100%;
+    max-height: 100%;
+}

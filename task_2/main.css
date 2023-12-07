@@ -1,0 +1,20 @@
+#statusButton {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.active {
+    background-color: green;
+    color: white;
+}
+
+.inactive {
+    background-color: red;
+    color: white;
+}
+
+.pending {
+    background-color: yellow;
+    color: black;
+}
