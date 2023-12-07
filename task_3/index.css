@@ -1,0 +1,51 @@
+body{
+    background-color: rgb(0, 255, 13);
+}
+
+.body-chess {
+    display: grid;
+    grid-template-columns: repeat(8, 50px);
+    grid-template-rows: repeat(8, 50px);
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.body-chess div {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+.white {
+    background-color: #ffffff;
+}
+
+.black {
+    background-color: #000000;
+    color: #ffffff;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding: 0;
+}   
+.letter{
+    margin-top: -430px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.numbering{
+    display: flex;
+    flex-direction: column;
+    margin-left: -50px;
+    margin-top: -210px;
+    height: 400px;
+}
+.number{
+    margin-top: 6px;
+    margin-bottom: 25px;
+}
