@@ -1,0 +1,26 @@
+.body{
+  margin-left: -0;
+  margin-top: -0;
+}
+.img_block{
+  margin: 20px auto;
+  display: flex;
+}
+.img_rotate1{
+  margin-left: 40px;
+  width: 200px;
+  height: 300px;
+  transition: transform 0.5s ease;
+}
+.img_rotate2{
+  margin-left: 40px;
+  width: 200px;
+  height: 300px;
+  transition: transform 0.5s ease;
+}
+.img_rotate3{
+  margin-left: 40px;
+  width: 200px;
+  height: 300px;
+  transition: transform 0.5s ease;
+}
