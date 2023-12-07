@@ -1,0 +1,18 @@
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.button.active {
+    background-color: #2ecc71;
+}
+
+.button.inactive {
+    background-color: #e74c3c;
+}
+.button.reset {
+    background-color: yellow;
+}
