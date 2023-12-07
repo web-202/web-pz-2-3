@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <script defer src="index.js"></script>
+    <title>Task 1</title>
+</head>
+<body>
+    <div>
+        <img src="img/image1.jpg" alt="Image 1" onclick="showNotification('Link 1')">
+        <img src="img/image2.jpg" alt="Image 2" onclick="showNotification('Link 2')">
+        <img src="img/image3.jpg" alt="Image 3" onclick="showNotification('Link 3')">
+    </div>
+    <div id="notification"></div>
+    <div>
+        <a href="#" onmouseover="addHref(this)" onmouseout="removeHref(this)">Link 1</a>
+        <a href="#" onmouseover="addHref(this)" onmouseout="removeHref(this)">Link 2</a>
+        <a href="#" onmouseover="addHref(this)" onmouseout="removeHref(this)">Link 3</a>
+    </div>
+    <div>
+        <form id="myForm" onsubmit="return validateForm()">
+            <label for="firstName">First name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+    
+            <label for="lastName">Last name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+    
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+    
+            <input type="submit" value="Submit">
+        </form>
+    
+        <div id="demo"></div>
+    </div>
+</body>
+</html>
