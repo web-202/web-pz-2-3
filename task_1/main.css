@@ -1,0 +1,11 @@
+img {
+    cursor: pointer;
+}
+
+a {
+    cursor: pointer;
+}
+
+.invalid {
+    border: 1px solid red;
+}
