@@ -1,0 +1,19 @@
+.button {
+    padding: 8px 16px;
+    border-radius: 4px;
+    color: white;
+    border: none;
+}
+
+.button-bg-green {
+    background: green;
+}
+
+.button-bg-red {
+    background: red;
+}
+
+.button-bg-orange {
+    background: orange;
+}
+
