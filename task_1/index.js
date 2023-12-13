@@ -1,9 +1,7 @@
-// Task 1
 function showAlert(element) {
   alert(element.src);
 }
 
-// Task 2
 function rotateImage(event, element) {
   if (event.button === 2) { // Right mouse button
     console.log(element.style.transform)
@@ -18,7 +16,6 @@ function rotateImage(event, element) {
   }
 }
 
-// Task 3
 function addHref(element) {
   element.innerText = 'URL'; // Extract URL from parentheses
   // element.innerText = element.innerText.slice(-5, -1); // Extract URL from parentheses
@@ -28,7 +25,6 @@ function removeHref(element) {
   element.innerText = "href";
 }
 
-// Task 4
 function validateName(input) {
   let regex = /^[a-zA-Z ]{1,50}$/;
   if (!regex.test(input.value)) {
