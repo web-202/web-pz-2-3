@@ -3,14 +3,10 @@ function rotate(element){
     element.style.transform = "rotate(90deg)";
 }
 function alertAction(element){
-    alert("click on images")
+    alert("click on KARAS")
 }
 function addHref(link) {
-    const text = link.textContent;
-    if (text.includes('(') && text.includes(')')) {
-        const textInParentheses = text.match(/\(([^)]+)\)/)[1];
-        link.href = textInParentheses;
-    }
+    document
 }
 
 function removeHref(link) {
@@ -46,5 +42,25 @@ function disablecontext(e) {
         e.preventDefault();
     }
 }
+
+
+function links(e){
+    alert("1")
+    const form = document.getElementById('site-link');
+    const link =  e.getAttribute('data-site');
+    form.innerHTML = `${link}`;
+}
+
+const link_over = document.querySelectorAll(".link_over")
+
+link_over.forEach(link => {
+    let text = link.textContent;
+    link.addEventListener("mouseover", () => {
+        link.textContent = `${text} (${link.href})`
+    })
+    link.addEventListener("mouseout", () => {
+        link.textContent = `${text}`
+    })
+})
 
 document.oncontextmenu = disablecontext;
