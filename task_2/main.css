@@ -1,0 +1,20 @@
+#statusButton {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .success {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .warning {
+    background-color: #FFC107;
+    color: black;
+  }
+  
+  .error {
+    background-color: #FF5252;
+    color: white;
+  }
