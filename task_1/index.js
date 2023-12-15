@@ -55,7 +55,7 @@ function showAlert(element) {
   
     if (firstName.classList.contains("invalid") || lastName.classList.contains("invalid") || age.classList.contains("invalid")) {
       demo.innerText = "Form is invalid. Please check your inputs.";
-      demo.style.color = "red";
+      demo.style.color = "Green";
     } else {
       demo.innerText = "Form is valid!";
       demo.style.color = "green";
