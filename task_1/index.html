@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="images">
+        <div class="main" onclick="alertAction(this)" oncontextmenu="rotate(this)">
+            <img src="Carassius_gibelio_2008_G1.jpg" alt="image_1">
+        </div>
+        <div class="main" onclick="alertAction(this)" oncontextmenu="rotate(this)">
+            <img src="Carassius_gibelio_2008_G1.jpg" alt="image_1">
+        </div>
+        <div class="main" onclick="alertAction(this)" oncontextmenu="rotate(this)">
+            <img src="Carassius_gibelio_2008_G1.jpg" alt="image_1">
+        </div>
+        </div>
+    </div>
+    <ul>
+        <li><a href="https://www.youtube.com" class="link_over" data-site="https://twitter.com/">google</a></li>
+        <li><a href="https://www.youtube.com" class="link_over"  data-site="https://twitter.com/">google</a></li>
+        <li><a href="https://www.youtube.com" class="link_over"  data-site="https://twitter.com/">google</a></li>
+    </ul>
+    <div id="site-link"></div>
+    <div class="space"></div>
+    <form id="userForm">
+        <div class="form-group">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+        </div>
+    
+        <div class="form-group">
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+        </div>
+    
+        <div class="form-group">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+        </div>
+    
+        <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+    
+
+    <div id="demo" class="message"></div>
+    <script src="index.js">
+    </script>
+</body>
+</html>
