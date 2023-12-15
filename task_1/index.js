@@ -42,10 +42,11 @@ function validateForm() {
         demoMessage.textContent = "Форма недійсна. Перевірте введені дані.";
         demoMessage.classList.add("invalid-message");
     }
+    let deg=0;
     function rotateImage(event) {
         if (event.button === 2) {
             const img = event.target;
-            img.style.transform = `rotate(${(img.dataset.rotation || 0) + 90}deg)`;
+            img.style.transform = `rotate(${(img.dataset.rotation || 0) + deg}deg)`;
             img.dataset.rotation = (img.dataset.rotation || 0) + 90;
         }
     }
