@@ -1,0 +1,52 @@
+.images{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.link {
+    margin-left: 30px;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 35px;
+}
+.images img{
+    width: 300px;
+    cursor: pointer;
+    height: 300px;
+    margin: 20px 100px;
+}
+
+.link:hover{
+    color: rgb(85, 248, 20);
+}
+
+.invalid {
+    border: 2px solid rgb(252, 13, 13);
+}
+
+.link:hover::after {
+    color: rgb(87, 253, 22);
+    content: " (href)";
+    
+}
+#age{
+    margin-bottom: 20px;
+}
+#firstName{
+    margin-bottom: 20px;
+}
+
+#lastName{
+    margin-bottom: 20px;
+}
+button{
+    font-weight: 700;
+    font-size: 17px;
+    width: 150px;
+    height: 45px;
+    margin-left: 35px;
+}
+#demo{
+    width: 500px;
+    margin-left: -80px;
+}

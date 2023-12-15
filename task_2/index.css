@@ -1,0 +1,18 @@
+.btnnnnn {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.btnnnnn.active {
+    background-color: #2ecc71;
+}
+
+.btnnnnn.inactive {
+    background-color: #e74c3c;
+}
+.btnnnnn.reset {
+    background-color: yellow;
+}
