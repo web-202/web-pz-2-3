@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Events</title>
+  <link rel="stylesheet" type="text/css" href="./main.css">
+</head>
+<body>
+
+
+<img src="./img/img.png" alt="Image 1" width="200" height="300" onclick="showAlert(this)">
+<img src="./img/img_1.png" alt="Image 2" width="200" height="300" onclick="showAlert(this)">
+<img src="./img/img_2.png" alt="Image 3" width="200" height="300" onclick="showAlert(this)">
+
+
+<img src="./img/img.png" alt="Image 1" width="200" height="300" oncontextmenu="rotateImage(event, this); return false;"
+     style="transform: rotate(0deg)">
+<img src="./img/img_1.png" alt="Image 2" width="200" height="300"
+     oncontextmenu="rotateImage(event, this); return false;" style="transform: rotate(0deg)">
+<img src="./img/img_2.png" alt="Image 3" width="200" height="300"
+     oncontextmenu="rotateImage(event, this); return false;" style="transform: rotate(0deg)">
+
+
+<a href="#" onmouseover="addHref(this)" onmouseout="removeHref(this)">Link 1 (URL1)</a>
+<a href="#" onmouseover="addHref(this)" onmouseout="removeHref(this)">Link 2 (URL2)</a>
+<a href="#" onmouseover="addHref(this)" onmouseout="removeHref(this)">Link 3 (URL3)</a>
+
+
+<form onsubmit="validateForm(); return false;">
+  <label for="firstName">First Name:</label>
+  <input type="text" id="firstName" name="firstName" maxlength="50" oninput="validateName(this)">
+
+  <label for="lastName">Last Name:</label>
+  <input type="text" id="lastName" name="lastName" maxlength="50" oninput="validateName(this)">
+
+  <label for="age">Age:</label>
+  <input type="text" id="age" name="age" oninput="validateAge(this)">
+
+  <button type="submit">Submit</button>
+</form>
+
+
+<div id="demo"></div>
+
+<script src="./index.js"></script>
+</body>
+</html>
